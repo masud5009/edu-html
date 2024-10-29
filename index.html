@@ -16,12 +16,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <div class="edu-wrapper">
+    <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -389,7 +390,7 @@
       </div>
       <div class="row">
         <div class="col-md-6" data-aos="slide-right" data-aos-duration="1200">
-          <img src="img/testimonial.png" alt="Testimonial Illustration">
+          <img src="img/testimonial.png" width="100%" class="img-fluid" alt="Testimonial Illustration">
         </div>
         <div class="col-md-6">
           <p>We have 2000+ positive customer reviews</p>
@@ -481,8 +482,8 @@
         <div class="footer-newsletter">
           <h3>Subscribe now</h3>
           <form id="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
+            <input class="form-control" type="email" placeholder="Enter your email" required>
+            <button class="btn btn-primary subscribe" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -497,6 +498,7 @@
       </div>
     </div>
   </footer>
+  </div>
 
 
   <!-- Scripts -->

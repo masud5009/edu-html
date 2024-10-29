@@ -19,6 +19,10 @@ body{
     font-weight: var(--font-normal);
     font-size: var(--font-base);
 }
+.edu-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
 .pt-50{
     padding-top: 50px;
 }
