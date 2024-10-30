@@ -9,9 +9,22 @@
   
   /* breadcrumb secton end*/
 
-  /*404 page */
 .not-found h1{
     color: var(--dark-color);
     padding: 10px 10px;
 }
-/*pricing 
+
+.map-container {
+    height: 300px;
+    background-color: #f8f9fa;
+}
+
+.contact-page .contact-form{
+    padding: 0px 20px 0px 20px;
+}
+.contact-page .contact-info {
+    margin-bottom: 20px;
+}
+.contact-page .contact-info i {
+    margin-right: 10px;
+}
