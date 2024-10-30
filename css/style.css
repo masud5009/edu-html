@@ -21,6 +21,7 @@ body {
     color: var(--text-medium);
     font-weight: var(--font-normal);
     font-size: var(--font-base);
+    background-color: var(--white-color);
 }
 
 .content-wrapper {
@@ -281,8 +282,6 @@ a{
 
 .templates {
     padding: 60px 0;
-    background-color: #ffffff;
-    color: #333;
 }
 
 .templates h2 {
