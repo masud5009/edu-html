@@ -1,80 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
 :root {
-    --primary-color: #007bff;
-    --dark-color: #000000;
-    --white-color:#f8f9fa;
-    --text-medium:#747474;
-    --font-normal:400;
-    --font-base:16px
+    --primary-color: #133E87;
+    --secondary-color: #608BC1;
+    --dark-color: #243642;
+    --white-color: #F3F3E0;
+    --text-medium: #747474;
+    --font-normal: 400;
+    --font-base: 16px
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     color: var(--text-medium);
     font-weight: var(--font-normal);
     font-size: var(--font-base);
 }
-.content-wrapper{
+
+.content-wrapper {
     width: 100%;
     overflow: hidden;
 }
-.pt-50{
+
+.pt-50 {
     padding-top: 50px;
 }
-.pb-50{
+
+.pb-50 {
     padding-bottom: 50px;
 }
 
-.pt-100{
+.pt-100 {
     padding-top: 100px;
 }
-.pb-100{
+
+.pb-100 {
     padding-bottom: 100px;
 }
 
+.btn:hover {
+    background-color: transparent;
+    color: var(--dark-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
 /*navbar start*/
- 
+.navbar {
+    background-color: var(--white-color);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateX(-10deg);
+    transform-origin: top;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0);
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color)
+}
+
 /*navbar end*/
 
 /* hero-section start */
 .hero-section {
     background-color: var(--white-color);
-  }
-  
-  .hero-text {
+}
+
+.hero-text {
     flex: 1;
     padding-right: 20px;
-  }
-  
-  .hero-title {
+}
+
+.hero-title {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--dark-color);
-  }
-  
-  .hero-subtitle {
+}
+
+.hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: var(--text-medium);
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     flex: 1;
     text-align: right;
 
-  }
-  
-  .hero-image img {
+}
+
+.hero-image img {
     max-width: 100%;
     height: auto;
-  }
-  
+}
+
 /*hero-section end */
 .template-section img {
     width: 100%;
@@ -90,6 +144,7 @@ body{
 .pricing-section {
     background-color: var(--white-color);
 }
+
 .pricing-section h2 {
     font-weight: bold;
     color: #333;
@@ -129,15 +184,20 @@ body{
 }
 
 /* featue section */
-.feature-section{
+.feature-section {
     background-color: var(--white-color);
 }
+
 .feature-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+}
+
+.feature-card h4 {
+    color: var(--dark-color);
 }
 
 .feature-card:hover {
@@ -179,15 +239,16 @@ body{
         margin-bottom: 20px;
     }
 }
+
 /* Section Header Styling */
 .section-header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     position: relative;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
@@ -195,24 +256,24 @@ body{
     padding-bottom: 5px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .section-title::after {
+}
+
+.section-title::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 50%;
     height: 3px;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 5px;
     transition: width 0.3s ease-in-out;
-  }
-  
-  .section-title:hover::after {
+}
+
+.section-title:hover::after {
     width: 100%;
-  }
-  
+}
+
 /*about section end */
 
 .templates {
@@ -263,10 +324,11 @@ body{
 /* Testimonial Section start */
 .testimonial-slider {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-  }
-  
-  .testimonial-item {
+    flex-direction: column;
+    /* Stack items vertically */
+}
+
+.testimonial-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -276,58 +338,60 @@ body{
     background-color: #fff;
     margin-bottom: 20px;
     transition: transform 0.3s;
-  }
-  
-  .testimonial-user {
+}
+
+.testimonial-user {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-  }
-  
-  .testimonial-user img {
+}
+
+.testimonial-user img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 15px;
-  }
-  
-  .user-info h4 {
+}
+
+.user-info h4 {
     margin: 0;
     font-weight: 600;
     color: #333;
-  }
-  
-  .rating {
+}
+
+.rating {
     color: #f39c12;
     font-size: 0.9rem;
     margin-top: 5px;
-  }
-  
-  .testimonial-item p {
+}
+
+.testimonial-item p {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
     margin: 10px 0;
-  }
-  .testimonial-slider .slick-dots {
+}
+
+.testimonial-slider .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
-  .testimonial-slider .slick-dots li {
+}
+
+.testimonial-slider .slick-dots li {
     margin: 0 5px;
-  }
-  
-  .testimonial-slider .slick-dots li button:before {
+}
+
+.testimonial-slider .slick-dots li button:before {
     font-size: 12px;
     color: #333;
-  }
-  
-  .testimonial-slider .slick-dots li.slick-active button:before {
+}
+
+.testimonial-slider .slick-dots li.slick-active button:before {
     color: var(--primary-color);
-  } 
-  
+}
+
 /* Testimonial Section end */
 
 /* Footer section start */
@@ -372,7 +436,8 @@ body{
     color: #ffffff;
     text-decoration: none;
 }
-.footer-contact i{
+
+.footer-contact i {
     padding-right: 5px;
 }
 
@@ -468,6 +533,7 @@ body{
     font-weight: bold;
     color: var(--primary-color);
 }
-.nav-tabs{
+
+.nav-tabs {
     border: none;
 }

@@ -1,8 +1,11 @@
 "use strict";
+/*======= navbar js =======*/
 $('.navbar-toggler').on('click', function () {
     const offcanvasMenuItems = $('#navbarMenu .nav-item').clone();
     $('#offcanvasMenuItems').empty().append(offcanvasMenuItems);
 });
+
+
 /*======= Initialize AOS animations =======*/
 AOS.init();
 
