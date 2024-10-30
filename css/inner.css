@@ -1,0 +1,16 @@
+/* breadcrumb secton start*/
+
+.breadcrumb-section {
+    padding: 80px 80px;
+    background-position :50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+  
+  /* breadcrumb secton end*/
+
+  /*404 page */
+.not-found h1{
+    color: var(--dark-color);
+    padding: 10px 10px;
+}

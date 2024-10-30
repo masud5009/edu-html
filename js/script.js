@@ -34,6 +34,9 @@ $(function () {
         vertical: true,
         adaptiveHeight: true,
     });
+});
 
-
+$(document).ready(function(){
+    let breadcrumbImage = $('.breadcrumb-section').data('image');
+    $('.breadcrumb-section').css('background-image', 'url(' + breadcrumbImage + ')');
 });

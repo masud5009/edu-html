@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 :root {
-    --primary-color: #133E87;
+    --primary-color: #FF6500;
     --secondary-color: #608BC1;
     --dark-color: #243642;
     --white-color: #F3F3E0;
@@ -43,14 +43,18 @@ body {
 .pb-100 {
     padding-bottom: 100px;
 }
-
+a{
+    text-decoration: none;
+}
 .btn:hover {
     background-color: transparent;
     color: var(--dark-color);
+    border-color: var(--primary-color);
 }
 
 .btn-primary {
     background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .text-primary {
@@ -92,7 +96,6 @@ body {
 .dropdown-item:hover {
     background-color: var(--primary-color)
 }
-
 /*navbar end*/
 
 /* hero-section start */
