@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 :root {
-    --primary-color: #FF6500;
+    --primary-color: #FF6B6B;
     --secondary-color: #608BC1;
     --dark-color: #243642;
-    --white-color: #F3F3E0;
+    --white-color: #F4F4F4;
     --text-medium: #747474;
     --font-normal: 400;
     --font-base: 16px
 }
+/*F3F3E0*/
 
 * {
     margin: 0;
@@ -59,12 +60,15 @@ a{
 }
 
 .text-primary {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 /*navbar start*/
 .navbar {
     background-color: var(--white-color);
+}
+.nav-link{
+    color: var(--dark-color);
 }
 
 .dropdown-menu {
@@ -295,12 +299,11 @@ a{
     overflow: hidden;
     border-radius: 15px;
     height: 500px;
-    padding-bottom: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .template-img-wrapper {
-    height: 90%;
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -312,17 +315,6 @@ a{
     transition: transform 0.5s ease;
     width: 100%;
 }
-
-.template-info {
-    padding: 20px;
-}
-
-.template-info h5 {
-    margin: 0;
-    font-size: 1.5rem;
-
-}
-
 /* Testimonial Section start */
 .testimonial-slider {
     display: flex;
@@ -504,11 +496,12 @@ a{
 /* Custom Styles for Pricing Section */
 .modern-tabs .nav-link {
     border: none;
-    border-radius: 50px;
     padding: 0.6rem 1.5rem;
-    background-color: #f3f3f3;
+    background-color: #fff;
     transition: background-color 0.3s, color 0.3s;
     margin: 0 0.2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    border-radius: 0;
 }
 
 .modern-tabs .nav-link.active {
