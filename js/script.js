@@ -4,8 +4,14 @@ $('.navbar-toggler').on('click', function () {
     const offcanvasMenuItems = $('#navbarMenu .nav-item').clone();
     $('#offcanvasMenuItems').empty().append(offcanvasMenuItems);
 });
-
-
+//  trigger resize base on window size
+$(window).resize(function () {
+    if ($(window).width() <= 992) {
+        $('#offcanvasMenuItems').empty().append(offcanvasMenuItems);
+    }else{
+        $('.btn-close').trigger('click');
+    }
+}).trigger('resize');
 
 
 /*======= Initialize AOS animations =======*/
