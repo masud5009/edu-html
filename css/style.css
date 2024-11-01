@@ -213,14 +213,54 @@ a{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    overflow: hidden ;
+    position: relative;
+    cursor: pointer;
 }
-
+.feature-card::before {
+    content: "";
+    background: #8888886b;
+    width: 228%;
+    height: 80rem;
+    position: absolute;
+    left: 33rem;
+    top: -55rem;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    cursor: pointer;
+    
+  }
+.feature-card p{
+    transition: 0.3s linear;
+}
 .feature-card h4 {
     color: var(--dark-color);
+    z-index: 999;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+}
+.feature-card:hover p{
+    color: var(--white-color);
+}
+
+.feature-card:hover .icon{
+    background: var(--white-color);
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.feature-card:hover::before {
+    left: -5rem;
+    background-color: var(--primary-color);
+    z-index: -1;
 }
 
 /* about section start */
@@ -533,6 +573,8 @@ a{
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .card-price {
     font-size: 2rem;
