@@ -6,6 +6,8 @@ $('.navbar-toggler').on('click', function () {
 });
 
 
+
+
 /*======= Initialize AOS animations =======*/
 AOS.init();
 

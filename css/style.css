@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 :root {
-    --primary-color: #FF6B6B;
-    --secondary-color: #608BC1;
-    --dark-color: #243642;
-    --white-color: #F4F4F4;
+    --primary-color: #2baffc;
+    --secondary-color: #55c360;
+    --dark-color: #010101;
+    --white-color: #f4f9fd;
     --text-medium: #747474;
     --font-normal: 400;
     --font-base: 16px
@@ -65,32 +65,43 @@ a{
 
 /*navbar start*/
 .navbar {
-    background-color: var(--white-color);
+    background-color: var(--primary-color);
 }
 .nav-link{
     color: var(--dark-color);
 }
-
+.edu{
+    color: var(--white-color);
+}
+.app{
+    color:var(--dark-color)
+}
+.navbar-brand{
+    font-weight: bold;
+}
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 121%;
     left: 0;
     background-color: var(--white-color);
-    border-radius: 0.5rem;
+    border-radius: 0rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: opacity 0.3s ease, visibility 0.5s ease, transform 0.5s ease;
     opacity: 0;
     visibility: hidden;
     transform: rotateX(-10deg);
     transform-origin: top;
+    border: none;
+    border-top: 3px solid var(--secondary-color);
+    padding: 0;
 }
 
 .nav-item:hover .dropdown-menu {
     display: block;
     opacity: 1;
     visibility: visible;
-    transform: rotateX(0);
+    transform: rotateX(0deg);
 }
 
 .dropdown-item {
