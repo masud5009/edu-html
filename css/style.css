@@ -239,12 +239,14 @@ a{
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(0px);
 }
 .feature-card:hover p{
     color: var(--white-color);
 }
-
+.icon{
+    transition: 0.3s linear;
+}
 .feature-card:hover .icon{
     background: var(--white-color);
     width: 4.5rem;
