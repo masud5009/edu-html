@@ -171,9 +171,14 @@ a{
 /*navbar start*/
 .navbar {
     background-color: var(--primary-color);
+    padding: 0;
 }
 .nav-link{
     color: var(--white-color);
+    padding: 20px 0px;
+}
+#offcanvasMenuItems>.nav-item>.nav-link{
+    color: var(--dark-color) !important;
 }
 .edu{
     color: var(--white-color);
@@ -183,6 +188,7 @@ a{
 }
 .navbar-brand{
     font-weight: bold;
+    padding: 17px 0px;
 }
 .navbar-toggler{
     border: none !important;
@@ -194,7 +200,7 @@ a{
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 121%;
+    top: 64px;
     left: 0;
     background-color: var(--white-color);
     border-radius: 0rem;
@@ -224,7 +230,8 @@ a{
 }
 
 .dropdown-item:hover {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
+    color: white;
 }
 /*navbar end*/
 
@@ -659,8 +666,6 @@ a{
     color: var(--primary-color);
 }
 
-
-
 /* Custom Styles for Pricing Section */
 .modern-tabs .nav-link {
     border: none;
@@ -670,35 +675,28 @@ a{
     margin: 0 0.2rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
     border-radius: 0;
+    color: var(--dark-color);
 }
-
 .modern-tabs .nav-link.active {
     background-color: var(--primary-color);
     color: white;
 }
-
 .modern-tabs .nav-link:hover {
     background-color: var(--primary-color);
     color: white;
 }
-
 .plan-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .plan-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
-
-
-
 .card-price {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primary-color);
 }
-
 .nav-tabs {
     border: none;
 }
