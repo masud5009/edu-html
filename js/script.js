@@ -42,6 +42,17 @@ $(function () {
         vertical: true,
         adaptiveHeight: true,
     });
+    /*========== user profile slider =======*/
+    $('.user-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        adaptiveHeight: true,
+    });
 });
 
 $(document).ready(function(){
