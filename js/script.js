@@ -4,6 +4,17 @@ $('.navbar-toggler').on('click', function () {
     const offcanvasMenuItems = $('#navbarMenu .nav-item').clone();
     $('#offcanvasMenuItems').empty().append(offcanvasMenuItems);
 });
+document.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    
+    // Check if the scroll position is greater than 50px (or any value you prefer)
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+  
 //  trigger resize base on window size
 $(window).resize(function () {
     if ($(window).width() <= 992) {

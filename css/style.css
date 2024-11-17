@@ -2,14 +2,23 @@
 
 :root {
     --primary-color: #2baffc;
+    --primary-color-rgba: rgba(43, 175, 252, 0.2);
     --secondary-color: #55c360;
     --dark-color: #010101;
     --white-color: #f4f9fd;
     --text-medium: #747474;
+    --accent-color: #ff5722;
+    --background-color: #f0f4f8;
+    --border-color: #e0e0e0;
+    --hover-primary: #2398d8;
+    --hover-secondary: #4daa56;
     --font-normal: 400;
+    --font-bold: 700;
     --font-base: 16px;
     --btn-bg: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    --btn-hover-bg: linear-gradient(0deg, rgba(0, 146, 200, 1) 0%, rgba(1, 105, 209, 1) 100%);
 }
+
 
 /*F3F3E0*/
 
@@ -207,13 +216,22 @@ a {
 
 /*navbar start*/
 .navbar {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-rgba);
     padding: 0;
 }
 
+.navbar.scrolled {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .nav-link {
-    color: var(--white-color);
+    color: var(--dark-color);
     padding: 20px 0px;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
 }
 
 #offcanvasMenuItems>.nav-item>.nav-link {
@@ -256,7 +274,6 @@ a {
     transform: rotateX(-10deg);
     transform-origin: top;
     border: none;
-    border-top: 3px solid var(--secondary-color);
     padding: 0;
 }
 
@@ -277,15 +294,15 @@ a {
 }
 
 .dropdown-item:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 /*navbar end*/
 
 /* hero-section start */
 .hero-section {
-    background-color: var(--white-color);
+    background-color: var(--primary-color-rgba);
 }
 
 .hero-text {
@@ -339,6 +356,13 @@ a {
     margin-bottom: 2rem;
 }
 
+.modern-tabs {
+    display: inline-flex;
+    background-color: var(--primary-color-rgba);
+    padding: 10px;
+    border-radius: 8px;
+}
+
 .card-price {
     font-size: 2.5rem;
     color: #333;
@@ -377,7 +401,7 @@ a {
 }
 
 .feature-card {
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -389,7 +413,7 @@ a {
 
 .feature-card::before {
     content: "";
-    background: #8888886b;
+    background: var(--border-color);
     width: 228%;
     height: 80rem;
     position: absolute;
@@ -486,6 +510,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .testimonial-section .section-header {
@@ -512,7 +537,8 @@ a {
     padding-bottom: 5px;
     position: relative;
 }
-.section-header h3{
+
+.section-header h3 {
     color: var(--dark-color);
 }
 
@@ -579,9 +605,9 @@ a {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--white-color);
     margin-bottom: 20px;
     transition: transform 0.3s;
 }
@@ -752,22 +778,23 @@ a {
 .modern-tabs .nav-link {
     border: none;
     padding: 0.6rem 1.5rem;
-    background-color: #fff;
+    background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
     margin: 0 0.2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
     border-radius: 0;
     color: var(--dark-color);
 }
 
 .modern-tabs .nav-link.active {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
+    border-radius: 10px;
 }
 
 .modern-tabs .nav-link:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
+    border-radius: 10px;
 }
 
 .plan-card {
