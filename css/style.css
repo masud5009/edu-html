@@ -3,7 +3,7 @@
 :root {
     --primary-color: #2baffc;
     --primary-color-rgba: rgba(43, 175, 252, 0.2);
-    --secondary-color: #55c360;
+    --secondary-color: #EFF6FC;
     --dark-color: #010101;
     --white-color: #f4f9fd;
     --text-medium: #747474;
@@ -69,14 +69,9 @@ a {
     text-decoration: none;
 }
 
-.slick-next::before {
-    color: var(--primary-color);
-    font-size: 25px
-}
-
+.slick-next::before,
 .slick-prev::before {
-    color: var(--primary-color);
-    font-size: 25px
+    display: none;
 }
 
 .btn:hover {
@@ -216,7 +211,7 @@ a {
 
 /*navbar start*/
 .navbar {
-    background-color: var(--primary-color-rgba);
+    background-color: var(--secondary-color);
     padding: 0;
 }
 
@@ -302,7 +297,7 @@ a {
 
 /* hero-section start */
 .hero-section {
-    background-color: var(--primary-color-rgba);
+    background-color: var(--secondary-color);
 }
 
 .hero-text {
@@ -315,6 +310,21 @@ a {
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--dark-color);
+}
+
+.hero-title span {
+    position: relative;
+}
+
+.hero-title span::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0px;
+    top: 47px;
+    border-radius: 50% 0 0 50%;
 }
 
 .hero-subtitle {
@@ -438,7 +448,8 @@ a {
     transform: translateY(0px);
 }
 
-.feature-card:hover p {
+.feature-card:hover p,
+.feature-card:hover h4 {
     color: var(--white-color);
 }
 
@@ -801,6 +812,36 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.plan-card ul {
+    text-align: left;
+    padding-left: 5px;
+    list-style: none;
+}
+
+.plan-card ul li {
+    display: flex;
+    align-items: center;
+}
+
+.plan-card ul li i {
+    margin-right: 8px;
+}
+
+.plan-card.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.plan-card.active .card-price {
+    color: var(--white-color);
+}
+
+.plan-card.active .btn-primary {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+
 .plan-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -818,11 +859,12 @@ a {
 
 /*user profile section */
 .user-section .featured-card {
-    background-color: #f8f9fa;
+    background-color: var(--primary-color-rgba);
     border-radius: 15px;
-    padding: 30px;
+    padding: 1px 0;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    margin: 0 10px;
 }
 
 .user-section .featured-card:hover {
@@ -838,21 +880,42 @@ a {
 
 .user-section .featured-card h5 {
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
 }
 
 .user-section .featured-card .social-icons a {
-    color: var(--text-medium);
+    color: var(--primary-color);
     font-size: 20px;
     margin: 0 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .user-section .featured-card .social-icons a:hover {
-    color: var(--text-medium-);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: scale(1.1);
 }
 
+.user-section .featured-card .social-icons a i {
+    font-size: 15px;
+}
+
+
 .user-section .featured-card .btn {
+    font-size: 14px;
     margin-top: 20px;
-    border-radius: 20px;
     padding: 8px 20px;
+}
+
+.feature-card-buttons {
+    padding-bottom: 20px;
 }
