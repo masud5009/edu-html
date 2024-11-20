@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 :root {
-    --primary-color: #2baffc;
-    --primary-color-rgba: rgba(43, 175, 252, 0.2);
-    --secondary-color: #EFF6FC;
+    --primary-color: #FF6742;
+    --secondary-color: #fff2ed;
+    --bg-blue: #0D1034;
     --dark-color: #010101;
-    --white-color: #f4f9fd;
+    --white-color: #FFFFFF;
     --text-medium: #747474;
-    --accent-color: #ff5722;
-    --background-color: #f0f4f8;
-    --border-color: #e0e0e0;
-    --hover-primary: #2398d8;
-    --hover-secondary: #4daa56;
+    --accent-color: #FF5722;
+    --background-color: #F0F4F8;
+    --border-color: #E0E0E0;
+    --hover-primary: #2398D8;
+    --hover-secondary: #4DAA56;
     --font-normal: 400;
     --font-bold: 700;
     --font-base: 16px;
-    --btn-bg: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
     --btn-hover-bg: linear-gradient(0deg, rgba(0, 146, 200, 1) 0%, rgba(1, 105, 209, 1) 100%);
 }
 
@@ -93,8 +92,6 @@ a {
   Custom Button Style
 ===============*/
 .custom-btn {
-    /* width: 130px;
-    height: 40px; */
     color: var(--white-color);
     padding: 10px 25px;
     font-family: 'Lato', sans-serif;
@@ -112,7 +109,6 @@ a {
 
 .btn-3 {
     background: var(--primary-color);
-    background: var(--btn-bg);
     width: 130px;
     height: 40px;
     line-height: 42px;
@@ -222,7 +218,8 @@ a {
 
 .nav-link {
     color: var(--dark-color);
-    padding: 20px 0px;
+    padding-right:20px !important;
+    padding-left:20px !important;
 }
 
 .nav-link:hover {
@@ -245,6 +242,12 @@ a {
     font-weight: bold;
     padding: 17px 0px;
 }
+.navbar-collapse{
+    flex-grow: 0;
+}
+.action-group{
+    margin-left: 100px;
+}
 
 .navbar-toggler {
     border: none !important;
@@ -258,7 +261,7 @@ a {
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 40px;
     left: 0;
     background-color: var(--white-color);
     border-radius: 0rem;
@@ -306,7 +309,7 @@ a {
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--dark-color);
@@ -328,7 +331,7 @@ a {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 30px;
     color: var(--text-medium);
 }
@@ -368,7 +371,7 @@ a {
 
 .modern-tabs {
     display: inline-flex;
-    background-color: var(--primary-color-rgba);
+    background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 8px;
 }
@@ -423,7 +426,7 @@ a {
 
 .feature-card::before {
     content: "";
-    background: var(--border-color);
+    background: var(--primary-color);
     width: 228%;
     height: 80rem;
     position: absolute;
@@ -538,6 +541,19 @@ a {
     flex: start;
     align-items: flex-start;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    list-style: none;
+}
+
+.about-section ul li {
+    line-height: 30px;
+}
+
+.about-section ul li i {
+    padding-right: 5px;
 }
 
 .section-title {
@@ -575,6 +591,7 @@ a {
 
 .template-section {
     padding: 60px 0;
+    background-color: var(--secondary-color);
 }
 
 .template-section h2 {
@@ -683,15 +700,16 @@ a {
 
 /* Footer section start */
 .footer {
-    background-color: #343a40;
+    background-color: var(--bg-blue);
     color: white;
-    padding: 40px 20px;
+    padding: 70px 0 10px 0px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: var(--white-color);
 }
 
 .footer-links,
@@ -707,6 +725,7 @@ a {
 .footer-newsletter h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .footer-links ul {
@@ -720,7 +739,7 @@ a {
 
 .footer-links a,
 .footer-contact p {
-    color: #ffffff;
+    color: var(--border-color);
     text-decoration: none;
 }
 
@@ -738,13 +757,9 @@ a {
 
 .footer-newsletter input {
     padding: 10px;
-    /* Padding for input */
     border: none;
-    /* Remove border */
     border-radius: 5px 0 0 5px;
-    /* Rounded corners */
     outline: none;
-    /* Remove outline */
 }
 
 .footer-newsletter button {
@@ -764,14 +779,11 @@ a {
 
 .footer-bottom {
     text-align: center;
-    /* Centered text */
     margin-top: 20px;
-    /* Space above */
 }
 
 .social-icons {
     margin-top: 10px;
-    /* Space above icons */
 }
 
 .social-icons a {
@@ -825,6 +837,14 @@ a {
 
 .plan-card ul li i {
     margin-right: 8px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
 
 .plan-card.active {
@@ -859,7 +879,7 @@ a {
 
 /*user profile section */
 .user-section .featured-card {
-    background-color: var(--primary-color-rgba);
+    background-color: var(--secondary-color);
     border-radius: 15px;
     padding: 1px 0;
     text-align: center;
