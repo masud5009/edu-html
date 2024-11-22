@@ -73,280 +73,261 @@
         <!-- Pricing Section -->
         <section class="pricing-section text-center pt-100 pb-100">
             <div class="container">
-                <!-- Tabs for Pricing Plans -->
-                <div>
-                    <ul class="nav nav-tabs modern-tabs" id="pricingTab" role="tablist" data-aos="fade-up"
-                        data-aos-duration="1200">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly"
-                                type="button" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="weekly-tab" data-bs-toggle="tab"
-                                data-bs-target="#yearly" type="button" role="tab" aria-controls="weekly"
-                                aria-selected="false">Weekly</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="lifetime-tab" data-bs-toggle="tab" data-bs-target="#lifetime"
-                                type="button" role="tab" aria-controls="lifetime"
-                                aria-selected="false">Lifetime</button>
-                        </li>
-                    </ul>
+              <div class="section-header">
+                <p class="section-title" data-aos="fade-up" data-aos-duration="1000">Our Plan</p>
+                <h3>Choose Your Perfect Option</h3>
+              </div>
+              <!-- Tabs for Pricing Plans -->
+              <div>
+                <ul class="nav nav-tabs modern-tabs" id="pricingTab" role="tablist" data-aos="fade-up"
+                  data-aos-duration="1200">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly"
+                      type="button" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="yearly-tab" data-bs-toggle="tab" data-bs-target="#yearly" type="button"
+                      role="tab" aria-controls="yearly" aria-selected="false">Yearly</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="lifetime-tab" data-bs-toggle="tab" data-bs-target="#lifetime" type="button"
+                      role="tab" aria-controls="lifetime" aria-selected="false">Lifetime</button>
+                  </li>
+                </ul>
+              </div>
+      
+              <!-- Tab Content for Pricing Plans -->
+              <div class="tab-content pt-5" id="pricingTabContent" data-aos="fade-up" data-aos-duration="1500">
+                <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                  <div class="row">
+                    <!-- Basic Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 shadow h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Basic</h5>
+                          <h3 class="card-price">$10<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
+                            <li><i class="fa fa-times text-danger"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Standard Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 active shadow-lg h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Standard <span class="badge bg-success ms-2">Popular</span></h5>
+                          <h3 class="card-price">$20<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
+                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Premium Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 shadow h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Premium</h5>
+                          <h3 class="card-price">$30<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-check text-success"></i> 10 GB storage</li>
+                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <!-- Tab Content for Pricing Plans -->
-                <div class="tab-content pt-5" id="pricingTabContent" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
-                        <div class="row">
-                            <!-- Basic Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Basic</h5>
-                                        <h3 class="card-price">$10<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-times text-success"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-times text-danger"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Standard Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow-lg h-100 active">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Standard <span
-                                                class="badge bg-success ms-2">Popular</span></h5>
-                                        <h3 class="card-price">$20<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Premium Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Premium</h5>
-                                        <h3 class="card-price">$30<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-success"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+                  <div class="row">
+                    <!-- Basic Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 shadow h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Basic</h5>
+                          <h3 class="card-price">$10<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
+                            <li><i class="fa fa-times text-danger"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
                         </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="monthly-tab">
-                        <div class="row">
-                            <!-- Basic Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Basic</h5>
-                                        <h3 class="card-price">$10<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-times text-success"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-times text-danger"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Standard Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow-lg h-100 active">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Standard <span
-                                                class="badge bg-success ms-2">Popular</span></h5>
-                                        <h3 class="card-price">$20<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Premium Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Premium</h5>
-                                        <h3 class="card-price">$30<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-success"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Standard Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card active border-0 shadow-lg h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Standard <span class="badge bg-success ms-2">Popular</span></h5>
+                          <h3 class="card-price">$20<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
+                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
                         </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="lifetime" role="tabpanel" aria-labelledby="monthly-tab">
-                        <div class="row">
-                            <!-- Basic Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Basic</h5>
-                                        <h3 class="card-price">$10<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-times text-success"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-times text-danger"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Standard Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow-lg h-100 active">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Standard <span
-                                                class="badge bg-success ms-2">Popular</span></h5>
-                                        <h3 class="card-price">$20<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Premium Plan -->
-                            <div class="col-md-4 mb-4">
-                                <div class="card plan-card border-0 shadow h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Premium</h5>
-                                        <h3 class="card-price">$30<span class="text-muted">/month</span></h3>
-                                        <ul class="list-unstyled my-4">
-                                            <li><i class="fa fa-check text-success"></i> Access to basic features
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 5 modern them</li>
-                                            <li><i class="fa fa-check text-success"></i> 24/7 customer support
-                                            </li>
-                                            <li><i class="fa fa-check text-success"></i> 10 GB storage</li>
-                                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
-                                            <li><i class="fa fa-times text-success"></i> Custom Domain</li>
-                                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Premium Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 shadow h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Premium</h5>
+                          <h3 class="card-price">$30<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-check text-success"></i> 10 GB storage</li>
+                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+                <div class="tab-pane fade" id="lifetime" role="tabpanel" aria-labelledby="lifetime-tab">
+                  <div class="row">
+                    <!-- Basic Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 shadow h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Basic</h5>
+                          <h3 class="card-price">$10<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
+                            <li><i class="fa fa-times text-danger"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Standard Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card active border-0 shadow-lg h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Standard <span class="badge bg-success ms-2">Popular</span></h5>
+                          <h3 class="card-price">$20<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-times text-danger"></i> 10 GB storage</li>
+                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-success"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Premium Plan -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card plan-card border-0 shadow h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Premium</h5>
+                          <h3 class="card-price">$30<span class="text-muted">/month</span></h3>
+                          <ul class="list-unstyled my-4">
+                            <li><i class="fa fa-check text-success"></i> Access to basic features</li>
+                            <li><i class="fa fa-check text-success"></i> 5 modern themes</li>
+                            <li><i class="fa fa-check text-success"></i> 24/7 customer support</li>
+                            <li><i class="fa fa-check text-success"></i> 10 GB storage</li>
+                            <li><i class="fa fa-check text-success"></i> Advanced analytics</li>
+                            <li><i class="fa fa-times text-danger"></i> Custom Domain</li>
+                            <li><i class="fa fa-times text-danger"></i> Subdomain</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary w-100 mt-auto">Choose Plan</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
     </div>
 
     <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
-          <div class="footer-content">
-            <div class="footer-links">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-              </ul>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i>
+                        support@example.com</p>
+                    <p><i class="fas fa-phone-alt"></i>
+                        +1 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i>
+                        123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe now</h3>
+                    <form id="newsletter-form">
+                        <input class="form-control" type="email" placeholder="Enter your email" required>
+                        <button class="btn btn-primary subscribe" type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-contact">
-              <h3>Contact Us</h3>
-              <p><i class="fas fa-envelope"></i>
-                support@example.com</p>
-              <p><i class="fas fa-phone-alt"></i>
-                +1 (123) 456-7890</p>
-              <p><i class="fas fa-map-marker-alt"></i>
-                123 Main Street, City, Country</p>
-            </div>
-            <div class="footer-newsletter">
-              <h3>Subscribe now</h3>
-              <form id="newsletter-form">
-                <input class="form-control" type="email" placeholder="Enter your email" required>
-                <button class="btn btn-primary subscribe" type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-    
-      </footer>
+
+    </footer>
 
 
     <!-- Scripts -->

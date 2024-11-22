@@ -310,7 +310,7 @@ a {
 
 .hero-title {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 20px;
     color: var(--dark-color);
 }
@@ -390,10 +390,10 @@ a {
     padding: 0.5rem 0;
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-}
+} */
 
 .card-body .btn {
     font-weight: bold;
