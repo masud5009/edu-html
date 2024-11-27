@@ -218,8 +218,8 @@ a {
 
 .nav-link {
     color: var(--dark-color);
-    padding-right:20px !important;
-    padding-left:20px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
 }
 
 .nav-link:hover {
@@ -242,10 +242,12 @@ a {
     font-weight: bold;
     padding: 17px 0px;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     flex-grow: 0;
 }
-.action-group{
+
+.action-group {
     margin-left: 100px;
 }
 
@@ -258,28 +260,39 @@ a {
     box-shadow: none !important;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: var(--white-color);
-    border-radius: 0rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease, visibility 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    visibility: hidden;
-    transform: rotateX(-10deg);
-    transform-origin: top;
-    border: none;
-    padding: 0;
+.nav-link.main-menu {
+    position: relative;
 }
 
-.nav-item:hover .dropdown-menu {
-    display: block;
+.nav-link.main-menu::after {
+    content: "+";
+    font-size: 20px;
+    position: absolute;
+    right: 1px;
+    top: 6px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item.submenu:hover .nav-link.nav-link.main-menu::after {
+    transform: rotate(90deg);
+}
+
+.nav-item.submenu .submenu-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background-color: var(--white-color);
+    list-style: none;
+    position: absolute;
+    padding: 0px 15px;
+    margin-top: 10px;
+}
+
+.nav-item.submenu:hover .submenu-item {
     opacity: 1;
-    visibility: visible;
-    transform: rotateX(0deg);
+    background-color: var(--white-color);
+    transform: translateY(0);
+    padding: 0px 15px;
 }
 
 .offcanvas-header {
@@ -294,6 +307,7 @@ a {
 .dropdown-item:hover {
     background-color: var(--white-color);
     color: var(--primary-color);
+    transition: .5s;
 }
 
 /*navbar end*/
