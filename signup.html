@@ -66,49 +66,51 @@
         <nav aria-label="breadcrumb" class="breadcrumb-section" data-image="img/breadcrumb.png">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active"><a href="#">Contact</a></li>
+                <li class="breadcrumb-item active"><a href="#">Pricing</a></li>
             </ol>
         </nav>
 
-        <!-- contact Section -->
-        <section class="contact-page">
-            <div class="container pt-100 pb-100">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="contact-card">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="contact-img">
-                                        <img src="img/contact.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="contact-form">
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="name" class="form-label">Name</label>
-                                                <input type="text" class="form-control" id="name" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="email" class="form-label">Email</label>
-                                                <input type="email" class="form-control" id="email" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message" class="form-label">Message</label>
-                                                <textarea class="form-control" id="message" rows="4"
-                                                    required></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Send Message</button>
-                                        </form>
-                                    </div>
-                                </div>
+        <!--login page-->
+        <div class="account-section pt-100 pb-100">
+            <div class="container">
+                <div class="signup-form mx-auto col-lg-6">
+                    <div class="card">
+                        <h4 class="pt-4 text-center">Welcome Back</h4>
+                        <div class="card-body">
+                            <div class="social-login">
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-google"></i></a>
                             </div>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Username</label>
+                                    <input type="text" class="form-control" name="username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="email">
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="name" class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password">
+                                    <span class="toggle-password" onclick="togglePasswordVisibility()">
+                                        <i class="fas fa-eye" id="eye-icon"></i>
+                                    </span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" name="confirm_password">
+                                </div>
+                                <div class="action-section">
+                                    <span>Do you have account ?<a href="login.html">Click here</a></span>
+                                </div>
+                                <button class="btn btn-primary w-100">Login</button>
+                            </form>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
 
     </div>
 

@@ -30,3 +30,61 @@
     flex: 1;
     padding: 20px;
 }
+
+/* authenticaion css */
+
+.login-form .social-login,
+.signup-form .social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .social-login a,
+.signup-form .social-login a {
+    background-color: var(--primary-color);
+    margin: 0px 10px;
+    padding: 7px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form .social-login a i,
+.signup-form .social-login a i {
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.login-form .action-section,
+.signup-form .action-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+}
+
+.login-form .action-section a,
+.signup-form .action-section a {
+    color: var(--primary-color);
+}
+.login-form .action-section span:last-child a,
+.signup-form .action-section span:last-child a {
+    margin-left: 5px;
+}
+
+.action-section a:hover {
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    cursor: pointer;
+    color: var(--primary-color);
+    z-index: 1;
+}
