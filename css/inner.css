@@ -70,6 +70,7 @@
 .signup-form .action-section a {
     color: var(--primary-color);
 }
+
 .login-form .action-section span:last-child a,
 .signup-form .action-section span:last-child a {
     margin-left: 5px;
@@ -87,4 +88,67 @@
     cursor: pointer;
     color: var(--primary-color);
     z-index: 1;
+}
+
+/*blog css*/
+.blog-section .card{
+    margin-bottom: 30px;
+}
+.blog-section .card-body {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.blog-section .card-body img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog-section .card-body img {
+    transition: transform 0.5s ease;
+}
+
+.blog-section .card-body:hover img {
+    transform: scale(1.1);
+}
+
+.blog-section .card-body .card-content {
+    padding: 15px 15px;
+}
+
+.blog-section .card-body .card-content .author {
+    padding: 15px 0px;
+}
+
+.blog-section .card-body .card-content h5 a {
+    color: var(--dark-color);
+    transition: .5s;
+}
+
+.blog-section .card-body .card-content p {
+    font-size: 16px;
+    color: var(--text-medium);
+}
+
+.blog-section .card-body .card-content h5 a:hover {
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+.blog-section .card-body::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.blog-section .card-body:hover::after {
+    width: 100%;
+    transition: .7s;
 }
