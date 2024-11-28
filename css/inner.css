@@ -91,9 +91,10 @@
 }
 
 /*blog css*/
-.blog-section .card{
+.blog-section .card {
     margin-bottom: 30px;
 }
+
 .blog-section .card-body {
     position: relative;
     padding: 0;
@@ -151,4 +152,23 @@
 .blog-section .card-body:hover::after {
     width: 100%;
     transition: .7s;
+}
+
+/*faq css */
+
+.faq-section .accordion-item {
+    margin-bottom: 30px;
+    border: none;
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 30px 0px rgba(78, 76, 76, 0.1);
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+.faq-section .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
