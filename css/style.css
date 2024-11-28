@@ -276,7 +276,7 @@ a {
 }
 
 .nav-item.submenu .submenu-item {
-    opacity: 0;
+    visibility: hidden;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     background-color: var(--white-color);
@@ -284,10 +284,11 @@ a {
     position: absolute;
     padding: 0px 15px;
     margin-top: 10px;
+    z-index: 999999;
 }
 
 .nav-item.submenu:hover .submenu-item {
-    opacity: 1;
+    visibility: visible;
     background-color: var(--white-color);
     transform: translateY(0);
     padding: 0px 15px;

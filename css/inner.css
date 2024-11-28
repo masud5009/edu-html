@@ -148,10 +148,68 @@
     bottom: 0;
 }
 
-
 .blog-section .card-body:hover::after {
     width: 100%;
     transition: .7s;
+}
+
+.blog-details .blog-content {
+    padding-top: 20px;
+}
+
+.blog-details .info {
+    padding-bottom: 20px;
+}
+
+.blog-details .card-title {
+    font-size: 22px !important;
+    font-weight: 500;
+}
+
+.blog-details .card-title i {
+    padding-right: 10px;
+}
+
+.blog-details .author-img img {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+.blog-details .date {
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.blog-details .title {
+    font-size: 22px;
+    color: var(--dark-color);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.blog-details .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-details .card-body span i {
+    padding-right: 10px;
+}
+
+.blog-details .card-body span {
+    padding: 5px 0px;
+}
+
+.blog-details .card-body a {
+    color: var(--dark-color);
+    font-size: 18px;
+    transition: .5s;
+}
+
+.blog-details .card-body a:hover {
+    color: var(--primary-color);
+    transition: .5s;
 }
 
 /*faq css */
@@ -164,8 +222,8 @@
 }
 
 .faq-section .accordion-button:not(.collapsed) {
-    background-color: var(--primary-color) !important;
-    color: var(--white-color) !important;
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
 }
 
 .faq-section .accordion-button:focus {
