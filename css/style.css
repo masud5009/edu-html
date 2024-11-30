@@ -229,7 +229,7 @@ a {
 }
 
 .edu {
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .app {
@@ -543,9 +543,9 @@ a {
 .testimonial-section .section-header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .about-section .section-header {
